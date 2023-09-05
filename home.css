@@ -1,0 +1,392 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: rgba(0, 0, 0, 0.93);
+  color: #fff;
+}
+
+/* ############## utility class ########### */
+
+.lg-heading {
+  font-size: 4rem;
+}
+
+.md-heading {
+  font-size: 1.5rem;
+}
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+}
+
+.btn {
+  text-decoration: none;
+  color: inherit;
+  color: #fff;
+  background: #c2b24c;
+  display: inline-block;
+  font-weight: bolder;
+  padding: 0.5em 1.5em;
+  margin: 1.2em 0;
+  text-transform: uppercase;
+  transition: background 0.3s ease-in;
+}
+
+.btn:hover {
+  background: #fff;
+  color: #c2b24c;
+  width: 40%;
+}
+.btn:active {
+  transform: scale(0.9);
+  background: #c2b24c;
+  color: #fff;
+}
+/* ############ header style ################## */
+
+.header {
+  position: relative;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.762), rgba(0, 0, 0, 0.773)),
+    url("./image/background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.logo {
+  color: #c2b24c;
+  font-style: italic;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin-left: 5rem;
+  margin-top: 0.7rem;
+}
+
+.navbar input[type="checkbox"],
+.navbar .hamburger-lines {
+  display: none;
+}
+
+.navbar {
+  width: 100%;
+  /* height: 10rem; */
+  display: flex;
+  border-bottom: 1px solid #fff;
+  background: rgba(0, 0, 0, 0.681);
+  color: #ffff;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding: 1rem;
+  /* position: fixed; */
+  /* top: 0; */
+}
+
+.ul-items {
+  display: flex;
+  font-size: 2rem;
+  list-style: none;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 5rem;
+}
+
+.ul-items li {
+  padding: 2rem;
+}
+
+.ul-items li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.ul-items li a:hover {
+  color: #c2b24c;
+  border-bottom: 1px solid #c2b24c;
+}
+
+.head-text {
+  /* border: 4px solid white; */
+  width: 50rem;
+  height: 50rem;
+  padding: 5rem;
+  margin: 10rem;
+  color: #fff;
+}
+
+.head-text p {
+  padding: 1rem;
+  margin-left: -1rem;
+}
+
+/* ###################### about style #################### */
+
+#about {
+  padding: 50px 0;
+}
+
+.about-wrapper {
+  display: flex;
+}
+
+#about h1 {
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #c2b24c;
+  border-bottom: 1px solid #fff;
+}
+
+.about-img img {
+  display: block;
+  height: 400px;
+  margin: auto;
+  max-width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.about-text {
+  font-size: 2rem;
+  /* border: 4px solid white; */
+  width: 500px;
+  padding: 1rem;
+  margin: auto;
+}
+
+.about-text a {
+  font-size: 1.5rem;
+}
+
+.about-text h2 {
+  margin-bottom: 1.5rem;
+}
+
+/* ###################### menu styling ########################## */
+#menu {
+  padding: 50px 0;
+}
+
+#menu h1 {
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #c2b24c;
+  border-bottom: 1px solid #fff;
+}
+
+.menu-wrapper1 {
+  display: flex;
+}
+.menu-wrapper2 {
+  display: flex;
+}
+
+.menu-wrapper .menu-items img {
+  height: 120px;
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  margin-top: 5rem;
+}
+
+.menu-wrapper .menu-items {
+  border: 1px solid rgba(255, 255, 255, 0.422);
+  height: 30rem;
+  width: 40rem;
+  margin: 1rem;
+  text-align: center;
+}
+
+.menu-text {
+  margin-top: 2rem;
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+
+/* ######################## Review styling ############################## */
+#review {
+  padding: 50px 0;
+}
+.main-h1 {
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #c2b24c;
+  border-bottom: 1px solid #fff;
+}
+
+.customers-review h2 {
+  font-size: 7rem;
+  color: #c2b24c;
+  margin-top: 1rem;
+}
+
+.customers-review h3 {
+  color: #c2b24c;
+}
+
+.review-container {
+  display: flex;
+}
+
+.review-img img {
+  width: 100px;
+  height: 70px;
+  border-radius: 50%;
+  margin-top: 1.5rem;
+}
+
+.review-container .customers-review {
+  width: 400px;
+  height: 420px;
+  border: 1px solid rgba(255, 255, 255, 0.422);
+  text-align: center;
+  margin: 1rem;
+  font-size: 1.8rem;
+  padding: 1rem;
+}
+
+/* ################ Contact styling ############################# */
+
+#contact {
+  padding: 50px 0;
+}
+
+.contact-container {
+  display: flex;
+  padding: 1rem;
+}
+
+.c-map {
+  margin: 1rem;
+}
+.c-form {
+  width: 600px;
+  font-size: 2rem;
+  /* border: 2px solid white; */
+  margin: 1rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.c-form input {
+  width: 80%;
+  height: 4rem;
+}
+
+.c-form a {
+  font-size: 1.5rem;
+}
+
+.c-form h1 {
+  text-transform: uppercase;
+}
+
+/* ####################### Blogs styling ############################# */
+#blogs {
+  padding: 50px 0;
+}
+
+.blog-container {
+  display: flex;
+  padding: 1rem;
+}
+
+.blog-wrapper img {
+  height: 25rem;
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.blog-wrapper {
+  border: 1px solid rgba(255, 255, 255, 0.422);
+  height: 500px;
+  /* padding: 1rem; */
+  font-size: 1.8rem;
+  margin: 1rem;
+}
+.b-text a {
+  font-size: 1.5rem;
+}
+
+.b-text {
+  margin-top: 2rem;
+}
+
+.b-text h2,
+.b-text p,
+.b-text a {
+  margin: 1rem;
+}
+
+.p {
+  color: #c2b24c;
+}
+
+/* ################### footer style ######################## */
+
+.footer {
+  padding: 50px 0px 20px 0px;
+  /* display: table; */
+  text-align: center;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  border-top: 1px solid white;
+  width: 100%;
+}
+
+.f-navbar .ul-items li {
+  padding: 1rem;
+  margin: 1rem;
+  font-size: 2.5rem;
+}
+
+.f-navbar .ul-items {
+  justify-content: center;
+}
+
+.fa-4x {
+  margin: 0 2rem 2rem 2rem;
+}
+
+.icon a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease-in;
+}
+
+.icon a:hover {
+  color: #c2b24c;
+}
+
+/* ############################## media quaries ############################## */
+
+@media (max-width: 500px) {
+  html {
+    font-size: 50%;
+  }
+
+  .navbar {
+    opacity: 0.95;
+  }
+}
